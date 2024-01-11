@@ -23,6 +23,37 @@ double price = 9.99;
 boolean isJavaFun = true;
 ```
 
+| Data Type        | Example                 | Range (for primitive types)        |
+|------------------|-------------------------|------------------------------------|
+| `byte`           | `byte myByte = 10;`     | -128 to 127                        |
+| `short`          | `short myShort = 1000;` | -32,768 to 32,767                  |
+| `int`            | `int myInt = 100000;`   | -2^31 to 2^31 - 1                  |
+| `long`           | `long myLong = 10000000000L;` | -2^63 to 2^63 - 1           |
+| `float`          | `float myFloat = 3.14f;` | Approximately ±3.4e38 (7 decimal digits precision) |
+| `double`         | `double myDouble = 3.14;`| Approximately ±1.7e308 (15 decimal digits precision)|
+| `char`           | `char myChar = 'A';`    | 0 to 65,535 (unsigned 16-bit integer)  |
+| `boolean`        | `boolean myBoolean = true;` | N/A (represents true or false)  |
+
+Note: The range values provided for `float` and `double` are approximate and may vary based on the specific implementation of the Java Virtual Machine (JVM).
+
+| Data Type        | Example                                       |
+|------------------|-----------------------------------------------|
+| `String`         | `String myString = "Hello, Java!";`           |
+| `int[]`          | `int[] myArray = {1, 2, 3, 4, 5};`            |
+| `interface`      | `interface Printable { void print(); }`      |
+| `class`          | `class Person { String name; int age; }`     |
+| `enum`           | `enum Day {SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY}` |
+
+These examples illustrate the declaration and initialization of variables with different reference data types in Java:
+
+- `String`: A sequence of characters.
+- `int[]`: An array of integers.
+- `interface`: A contract for classes to implement certain methods.
+- `class`: A blueprint for creating objects with attributes and behaviors.
+- `enum`: A special data type representing a set of named constants.
+
+Understanding these reference data types is essential for building complex and structured Java applications. Each data type serves a specific purpose in Java programming.
+
 **4. Operators:**
    - Java supports operators for performing operations on variables and values. For example:
 
@@ -31,6 +62,33 @@ int sum = 5 + 3;
 double product = 2.5 * 4.0;
 boolean isEqual = (5 == 5);
 ```
+
+Certainly! Here's a table with examples of common operators in Java:
+
+| Operator Type                 | Operator     | Example                 | Explanation                                      |
+|-------------------------------|--------------|-------------------------|--------------------------------------------------|
+| **Arithmetic Operators**       | `+`          | `int sum = 5 + 3;`       | Addition                                         |
+|                               | `-`          | `int difference = 10 - 4;` | Subtraction                                   |
+|                               | `*`          | `int product = 2 * 3;`   | Multiplication                                   |
+|                               | `/`          | `double quotient = 8.0 / 2.0;` | Division                                   |
+|                               | `%`          | `int remainder = 10 % 3;` | Modulus (Remainder)                              |
+| **Relational Operators**       | `==`         | `boolean isEqual = (5 == 5);` | Equality                                        |
+|                               | `!=`         | `boolean notEqual = (10 != 5);` | Inequality                                   |
+|                               | `>`          | `boolean isGreaterThan = (8 > 3);` | Greater Than                              |
+|                               | `<`          | `boolean isLessThan = (4 < 7);` | Less Than                                       |
+|                               | `>=`         | `boolean greaterThanOrEqual = (5 >= 5);` | Greater Than or Equal To                   |
+|                               | `<=`         | `boolean lessThanOrEqual = (3 <= 6);` | Less Than or Equal To                       |
+| **Logical Operators**         | `&&`         | `boolean andResult = (true && false);` | Logical AND                                |
+|                               | `||`         | `boolean orResult = (true || false);` | Logical OR                                 |
+|                               | `!`          | `boolean notResult = !true;` | Logical NOT                                  |
+| **Increment/Decrement**       | `++`         | `int count = 5; count++;` | Increment                                       |
+|                               | `--`         | `int value = 8; value--;` | Decrement                                       |
+| **Assignment Operators**      | `=`          | `int x = 10;`            | Assignment                                      |
+|                               | `+=`         | `int total = 5; total += 3;` | Add and Assign                               |
+|                               | `-=`         | `int result = 10; result -= 4;` | Subtract and Assign                      |
+|                               | `*=`         | `int productValue = 3; productValue *= 2;` | Multiply and Assign                  |
+
+These examples cover a range of operators, including arithmetic, relational, logical, increment/decrement, and assignment operators commonly used in Java programming.
 
 **5. Control Structures:**
    - Java includes control structures like `if`, `else`, `while`, and `for` for making decisions and controlling program flow. Example:
