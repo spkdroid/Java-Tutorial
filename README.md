@@ -324,6 +324,131 @@ public class Person {
 }
 ```
 
+Object-oriented programming (OOP) is a programming paradigm that is based on the concept of "objects," which can encapsulate data and behavior. Java is a fully object-oriented programming language, and OOP principles are fundamental to its design. Here are the key concepts of object-oriented programming in Java:
+
+### **Classes and Objects:**
+   - **Class:** A class is a blueprint or template for creating objects. It defines the properties (fields/attributes) and behaviors (methods) that objects of the class will have.
+   
+   ```java
+   public class Car {
+       // Fields/Attributes
+       String model;
+       int year;
+
+       // Methods
+       void start() {
+           System.out.println("Car started");
+       }
+
+       void stop() {
+           System.out.println("Car stopped");
+       }
+   }
+   ```
+
+   - **Object:** An object is an instance of a class. It represents a real-world entity and has its own state (values of fields) and behavior (execution of methods).
+
+   ```java
+   Car myCar = new Car();
+   myCar.model = "Toyota";
+   myCar.year = 2022;
+   myCar.start();
+   ```
+
+### **Encapsulation:**
+   - Encapsulation is the bundling of data (fields) and methods that operate on that data into a single unit known as a class. It helps in hiding the internal details of the object.
+
+   ```java
+   public class Student {
+       private String name;
+       private int age;
+
+       // Getter and setter methods
+       public String getName() {
+           return name;
+       }
+
+       public void setName(String name) {
+           this.name = name;
+       }
+
+       // Similar methods for 'age'
+   }
+   ```
+
+### **Inheritance:**
+   - Inheritance is a mechanism where a new class (subclass/derived class) inherits properties and behaviors from an existing class (superclass/base class).
+
+   ```java
+   public class ElectricCar extends Car {
+       // Additional fields and methods specific to ElectricCar
+   }
+   ```
+
+### **Polymorphism:**
+   - Polymorphism allows objects to be treated as instances of their parent class. It includes method overriding and method overloading.
+
+   ```java
+   // Method Overriding
+   @Override
+   void start() {
+       System.out.println("Electric car started");
+   }
+
+   // Method Overloading
+   void charge() {
+       System.out.println("Charging the electric car");
+   }
+
+   void charge(int hours) {
+       System.out.println("Charging the electric car for " + hours + " hours");
+   }
+   ```
+
+### **Abstraction:**
+   - Abstraction is the process of simplifying complex systems by modeling classes based on the essential properties and behaviors they possess.
+
+   ```java
+   abstract class Shape {
+       abstract void draw(); // Abstract method
+   }
+
+   class Circle extends Shape {
+       void draw() {
+           System.out.println("Drawing a circle");
+       }
+   }
+   ```
+
+### **Interfaces:**
+   - Interfaces define a contract for classes that implement them. They consist of abstract methods that must be implemented by the classes.
+
+   ```java
+   interface Printable {
+       void print();
+   }
+
+   class Document implements Printable {
+       public void print() {
+           System.out.println("Printing a document");
+       }
+   }
+   ```
+
+### **Composition:**
+   - Composition involves creating relationships between objects by including other objects as fields. It allows for building complex objects from simpler ones.
+
+   ```java
+   public class Computer {
+       private CPU cpu;
+       private RAM ram;
+
+       // Constructor, getter, setter, etc.
+   }
+   ```
+
+These OOP concepts provide a powerful and flexible way to design and structure Java programs, making code more modular, reusable, and easier to maintain. They support the principles of encapsulation, inheritance, polymorphism, and abstraction, contributing to a well-organized and scalable software architecture.
+
 **8. Input and Output:**
    - Java provides libraries for reading input from the user and displaying output. Example:
 
